@@ -1,0 +1,41 @@
+body {
+    background-color: cadetblue;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 1.1%;
+    width: 100%;
+    height: 80%;
+    max-width: 80%;
+    transform: translateX(8%);
+}
+
+.img-card {
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    height: 250px;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+.img-cardTeste {
+    width: 100%;
+    height: 230px;
+    cursor: pointer;
+    border-radius: 2px;
+    margin-bottom: 1%;
+}
+
+.img-cardTeste:hover {
+    transform: scale(1.1);
+}
+
+.nameCharacter {
+    text-align: center;
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #fff;
+}
