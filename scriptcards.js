@@ -2,7 +2,7 @@ window.onload = function() {
     renderTags(characters); 
     renderProject(characters);
     renderEnvironment(environment);
-    renderDev(characters);
+    renderDev(dev);
     renderFrameworks(characters);
     renderBugs(characters);
 
@@ -41,6 +41,13 @@ const characters = [
 
 const environment = [
     'VESSE-ESTUDIO'
+]
+
+const dev = [
+    'TRAINEE',
+    'JUNIOR', 
+    'PLENO',
+    'SENIOR'
 ]
 
 function renderTags(tagList){
