@@ -40,7 +40,18 @@ const characters = [
 ];
 
 const environment = [
-    'VESSE-ESTUDIO'
+    'VESSE-ESTUDIO',
+    'VESSE-CORDE',
+    'NONTEPEDEMAIS',
+    'PAICHARMO',
+    'EKLIPSER',
+    'UNRIUENGINOR',
+    'JEITOBREINS',
+    'ANDROIDS-TUDOR',
+    'MARSS',
+    'DARTYPEDE',
+    'PADRE',
+    'SIMPLAI-FORT'
 ]
 
 const dev = [
