@@ -3,7 +3,7 @@ window.onload = function() {
     renderProject(characters);
     renderEnvironment(environment);
     renderDev(dev);
-    renderFrameworks(characters);
+    renderFrameworks(frameworks);
     renderBugs(characters);
 
     // image.addEventListener('click',(evt)=>{
@@ -59,6 +59,13 @@ const dev = [
     'JUNIOR', 
     'PLENO',
     'SENIOR'
+]
+
+const frameworks = [
+    'FreeRTOS',
+    'CMSIS',
+    'ULTIMATE++',
+    'QT'
 ]
 
 function renderTags(tagList){
