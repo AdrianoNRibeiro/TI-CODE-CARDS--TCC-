@@ -8,11 +8,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Passero+One&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <title>Cartas</title>
     <script defer src="../scriptcards.js"></script>
 
 </head>
-<body>
+<body id="body">
     <header>
         <img src="../img/iconCard.png" alt="" class="icon" id="icon">
         <nav>
@@ -22,11 +22,11 @@
             <a href="../pages/sobre.html" class="menu" id="sobre">SOBRE</a>
         </nav>
     </header>
-    <main class="">
+    <main class="main">
         <div class="container">
             <div class="card-player">
                 <div class="title"><h2>CARTAS DE LINGUAGENS</h2></div>              
-                <div class="grid">
+                <div class="grid" id="language-cards">
                 </div>                
             </div> 
             <div class="card-player2">
@@ -57,11 +57,15 @@
 
             <div class="card-information hidden" id="information">
                 <div class="card-amp">
-                    <img src="../img/ASSEMBELE.png" alt="" class="img-card-amp">
+                    <img src="" alt="" class="img-card-amp" id="card-show">
                 </div>
                 <div class="card-description">
                     <div class="field f-name">
-                        <label>Nome:</label>
+                        <div style="display: flex; justify-content: space-between;">
+                            <label>Nome:</label>
+                            <img src="../img/cruz.png" alt="Fechar" id="close-info" class="close-info">
+                        </div>
+                        
                         <p id="card-name">ASSEMBELES</p>
                     </div>
                     <div class="field f-desc">

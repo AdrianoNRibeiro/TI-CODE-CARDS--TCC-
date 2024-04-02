@@ -11,7 +11,8 @@ header {
 
 .icon {
     width: 3%;
-    cursor: pointer;   
+    cursor: pointer; 
+    transition: all 400ms ease;  
 }
 
 .icon:hover {

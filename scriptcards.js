@@ -6,14 +6,24 @@ window.onload = function() {
     renderFrameworks(frameworks);
     renderBugs(characters);
 
-    // image.addEventListener('click',(evt)=>{
-    //     desc.classList.toggle('hidden');
-    //     grid.classList.toggle('backgroundDark');
-    //     console.log('cliquei nos outros');
-    // })
+    const languageCard = document.getElementById('language-cards');
+    const infoCard = document.getElementById('information');
+    const cardShow = document.getElementById('card-show');
+    const closeInfo = document.getElementById('close-info');
+
+    languageCard.addEventListener('click', evt =>{        
+        let imageCard = evt.target.src;
+        console.log(imageCard);
+
+        infoCard.classList.toggle('hidden');
+        cardShow.src = imageCard;
+    })
+
+    closeInfo.addEventListener('click',(evt)=>{
+        infoCard.classList.toggle('hidden');
+    });
 
 };
-
 
 const characters = [
     'ASSEMBELE',
@@ -65,7 +75,8 @@ const frameworks = [
     'FreeRTOS',
     'CMSIS',
     'ULTIMATE++',
-    'QT'
+    'QT',
+    'NANA++'
 ]
 
 function renderTags(tagList){
@@ -206,6 +217,8 @@ function renderBugs(tagList){
         tagElement.appendChild(tagLabel);    
     })
 }
+
+
 
 
 const linguagens = [
