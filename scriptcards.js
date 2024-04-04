@@ -5,6 +5,7 @@ window.onload = function() {
     const closeInfo = document.getElementById('close-info');
     const cardName = document.getElementById('card-name');
     const description = document.getElementById('description');
+    const cardFrameworks = document.getElementById('card-framework');
 
     renderCards(characters, '.grid');
     renderCards(characters, '.grid2');
@@ -21,8 +22,13 @@ window.onload = function() {
         cardShow.src = imageCard;
 
         const nameCard = evt.target.parentNode.lastChild;
+
         cardName.innerHTML = nameCard.innerHTML;
         description.innerHTML = assembele.descricao;
+
+        console.log(assembele.frameworks);
+        cardFrameworks.src= assembele.frameworks;
+
         
     })
 
@@ -35,7 +41,7 @@ window.onload = function() {
 const assembele = {
     "nome": "ASSEMBELE",
     "descricao": "Nascido nas profundezas das montanhas antigas, foi criado pelos espíritos da terra. Tem uma afinidade única com as pedras e os minerais. Sua arma é a Clava de Obsidiana(uma arma poderosa forjada por suas próprias mãos).",
-    "frameworks": "../TCC/img/VESSE-ESTUDIO.png",
+    "frameworks": "../img/FreeRTOS.png",
     "fusoes": "../TCC/img/CEH.png"
 }
 
