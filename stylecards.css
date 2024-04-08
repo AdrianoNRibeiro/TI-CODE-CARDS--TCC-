@@ -8,6 +8,40 @@ body {
     background-color: teal;
 }
 
+@media only screen and (max-width: 600px) {
+    .grid, .grid2, .grid3,.grid4, .grid5, .grid6 {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+
+    .icon {
+        width: 10%;
+    }
+
+    h2 {
+        font-size: 1.5em !important;
+    }
+
+    .grid {
+        margin-bottom: 15px !important;
+    }
+
+    .title2 {
+        margin-top: 350px !important;
+    }
+
+    .dev {
+        margin-top: 150px !important;
+    }
+
+    .frame {
+        margin-top: 50px !important;
+    }
+
+    .bug {
+        margin-top: 50px !important;
+    }
+}
+
 .title, .title2 {
     width: 100%;
     max-width: 80%;

@@ -29,6 +29,11 @@ window.onload = function() {
         console.log(assembele.frameworks);
         cardFrameworks.src= assembele.frameworks;
 
+        // const teste = 'Testando o WhatsApp';
+        // const message = encodeURIComponent(teste);
+        // const phone = "31995896704";
+        // window.open(`https://wa.me/${phone}?text=${message}`, "_blank");
+
         
     })
 
@@ -123,7 +128,9 @@ function renderCards(listCards, campGrids){
     
         grids.appendChild(tagElement);
         tagElement.appendChild(tagImage);
-        tagElement.appendChild(tagLabel);    
+        tagElement.appendChild(tagLabel);  
+        
+        
         
     })
 }
@@ -136,6 +143,8 @@ const linguagens = [
         "fusoes": "../TCC/img/CEH.png"
     }
 ]
+
+
 
 
 
