@@ -40,6 +40,36 @@ body {
     .bug {
         margin-top: 50px !important;
     }
+
+    .card-information {
+        flex-direction: column !important;
+        width: 100% !important;
+        left: 10% !important;
+    }
+
+    .card-amp {
+        width: 80% !important;
+        margin: 1px !important;
+        height: 100% !important;
+    }
+
+    .card-description {
+        margin-top: -50px !important;
+        height: 100% !important;
+        width: 80% !important;
+    }
+
+    .f-name {
+        margin-top: 15px !important;
+    }
+
+    .f-desc {
+        margin-top: 100px !important;
+    }
+
+    .f-frame {
+        margin-top: 80px !important;
+    }
 }
 
 .title, .title2 {
