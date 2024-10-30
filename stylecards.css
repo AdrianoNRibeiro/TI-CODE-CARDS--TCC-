@@ -148,7 +148,7 @@ h2 {
     margin-left: auto;
     margin-right: auto;
     display: flex;
-    position: absolute;
+    position: fixed;
     top: 12%;
     left: 5%;
 }
