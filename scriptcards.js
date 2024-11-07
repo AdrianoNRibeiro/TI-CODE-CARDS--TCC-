@@ -1,5 +1,6 @@
 window.onload = function() { 
     const languageCard = document.getElementById('language-cards');
+    const projectCard = document.getElementById('project-cards');
     const infoCard = document.getElementById('information');
     const cardShow = document.getElementById('card-show');
     const closeInfo = document.getElementById('close-info');
@@ -8,7 +9,7 @@ window.onload = function() {
     const cardFrameworks = document.getElementById('card-framework');
 
     renderCards(characters, '.grid');
-    renderCards(characters, '.grid2');
+    renderCards(projects, '.grid2');
     renderCards(environment, '.grid3');
     renderCards(dev, '.grid4');
     renderCards(frameworks, '.grid5');
@@ -27,19 +28,27 @@ window.onload = function() {
         description.innerHTML = assembele.descricao;
 
         console.log(assembele.frameworks);
-        cardFrameworks.src= assembele.frameworks;
-
-        // const teste = 'Testando o WhatsApp';
-        // const message = encodeURIComponent(teste);
-        // const phone = "31995896704";
-        // window.open(`https://wa.me/${phone}?text=${message}`, "_blank");
-
-        
+        cardFrameworks.src= assembele.frameworks;     
     })
 
     closeInfo.addEventListener('click',(evt)=>{
         infoCard.classList.toggle('hidden');
     });
+
+    projectCard.addEventListener('click', evt =>{
+        let imageCard = evt.target.src;
+
+        infoCard.classList.toggle('hidden');
+        cardShow.src = imageCard;
+
+        const nameCard = evt.target.parentNode.lastChild;
+
+        cardName.innerHTML = nameCard.innerHTML;
+        description.innerHTML = assembele.descricao;
+
+        console.log(assembele.frameworks);
+        cardFrameworks.src = assembele.frameworks;
+    })
 
 };
 
@@ -74,7 +83,7 @@ const characters = [
     'VISUBAZICK',
 ];
 
-const projects = [];
+const projects = [ 'TIPS CRYPTO', 'WEBSPAGER', 'FRONTENDOR', 'FRONTENDORZ' ];
 
 const environment = [
     'VESSE-ESTUDIO',
