@@ -83,7 +83,7 @@ const characters = [
     'VISUBAZICK',
 ];
 
-const projects = [ 'TIPS CRYPTO', 'WEBSPAGER', 'FRONTENDOR', 'FRONTENDORZ' ];
+const projects = [ 'TIPS CRYPTO', 'WEBSPAGER', 'FRONTENDOR', 'FRONTENDORZ', 'BACKNET' ];
 
 const environment = [
     'VESSE-ESTUDIO',
